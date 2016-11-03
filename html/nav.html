@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>历史上的今天</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="../css/nav.css"  />
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script>
+			+function(){
+				//获取设备宽度 （浏览器的宽度）
+				var width = document.documentElement.clientWidth;
+				//获取 根元素
+				var html = document.getElementsByTagName("html")[0];
+				// 设计稿是 750 宽度
+				// 把设计稿 除  100 = 7.5
+				// 设备宽度 除 7.5 得到 font-size
+				html.style.fontSize = (width / 7.5) + "px";
+			}();
+		</script>
+		<script>
+		$(function(){
+			$('.gotop').click(function(){
+			 	document.body.scrollTop =document.documentElement.scrollTop=0;
+		 	})
+			$('.msearch').click(function(){
+				$('.gray').css('display','block');
+				$('.msearch').css('display','none');
+				$('.mtitle').css('display','none');
+				$('.inbtn').css('display','block');
+				$('.insearch').css('display','block')
+			})
+			$('.gray').click(function(){
+				$('.gray').css('display','none');
+				$('.inbtn').css('display','none');
+				$('.insearch').css('display','none');
+				$('.msearch').css('display','block');
+				$('.mtitle').css('display','block');
+			})
+			
+
+		
+		
+						//置顶菜单
+				$(window).scroll(function()/*鼠标滚动*/
+				{
+				var $top= document.body.scrollTop ||document.documentElement.scrollTop;/*滚动距离*/
+				
+				if($top>=200)	/*判断滚动距离大于300，则出现*/
+				{
+					$('.gotop').css({ //置顶菜单显示
+						"display" : "block"
+					})
+				}
+				else{
+					$('.gotop').css({ //置顶菜单显示
+						"display" : "none"
+					})
+				};
+				
+			  });
+ 		}) 
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="mtop">
+				<a class="mlogo" href="/">
+					<img src="http://www.todayonhistory.com/style/images/mlogo.png" width="21" height="21"/>
+				</a>
+				<span class="mtitle">历史上的今天</span>
+				<input type="text" class="insearch" placeholder="请输入搜索关键词"/>
+				<input type="button" class="inbtn"  />
+				<div class="mmenu"></div>
+				<div class="msearch"></div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="gray"></div>
+			<h3>
+				<a href="http://www.todayonhistory.com/">历史事件</a>
+			</h3>
+			<h3>
+				<a href="http://top.todayonhistory.com/">今日头条</a>
+			</h3>
+			<p>
+				<a href="http://top.todayonhistory.com/yule/">娱乐</a>
+				<a href="http://top.todayonhistory.com/shehui/">社会</a>
+				<a href="http://top.todayonhistory.com/tiyu/">体育</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/wnl/">万年历</a>
+			</h3>
+			<h3>
+				<a href="http://www.todayonhistory.com/jieri/">节日大全</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/jieri/news/">节日资讯</a>
+				<a href="http://www.todayonhistory.com/jieri/chuantong/">中国传统节日</a>
+				<a href="http://www.todayonhistory.com/jieri/ssmz/">少数民族节日</a>
+				<a href="http://www.todayonhistory.com/jieri/guoji/">国际节日</a>
+				<a href="http://www.todayonhistory.com/jieri/guowai/">国外节日</a>
+				<a href="http://www.todayonhistory.com/jieri/zongjiao/">宗教节日</a>
+				<a href="http://www.todayonhistory.com/jieri/zhufu/">节日祝福</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/people/">人物</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/people/gudai/">古代</a>
+				<a href="http://www.todayonhistory.com/people/jindai/">近代</a>
+				<a href="http://www.todayonhistory.com/people/guoji/">国际</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/lishi/">看历史</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/a/day/">每日历史回顾</a>
+				<a href="http://www.todayonhistory.com/a/year/">按年份事件列表</a>
+				<a href="http://www.todayonhistory.com/a/chaodai/1.html">按朝代事件列表</a>
+				<a href="http://www.todayonhistory.com/a/chinawar/">中国历代战争年表</a>
+				<a href="http://www.todayonhistory.com/a/shenma/">历史上的神马</a>
+				<a href="http://www.todayonhistory.com/a/cailiao/">历史材料</a>
+				<a href="http://www.todayonhistory.com/a/city/">历史文化名城</a>
+			</p>
+			<h3>
+				<a href="javascript:;">以史为镜</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/a/huaxia/">华夏文明</a>
+				<a href="http://www.todayonhistory.com/a/sjhm/">世界回眸</a>
+				<a href="http://www.todayonhistory.com/a/lsyy/">历史寓言</a>
+				<a href="http://www.todayonhistory.com/lishi/huangdi/">皇帝列表</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/lishi/zz/">历史战争</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/lishi/zz/zhanshi/">战史资料</a>
+				<a href="http://www.todayonhistory.com/lishi/zz/gudai/">古代战争</a>
+				<a href="http://www.todayonhistory.com/lishi/zz/jindai/">近代战争</a>
+				<a href="http://www.todayonhistory.com/lishi/zz/waiguo/">外国战争</a>
+			</p>
+			<h3>
+				<a href="javascript:;">中国历史</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/lishi/shanggu/">上古历史</a>
+				<a href="http://www.todayonhistory.com/lishi/xiachao/">夏朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/shangchao/">商朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/zhouchao/">周朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/chunqiuzhanguo/">春秋战国</a>
+				<a href="http://www.todayonhistory.com/lishi/qinchao/">秦朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/hanchao/">汉朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/sanguo/">三国历史</a>
+				<a href="http://www.todayonhistory.com/lishi/jinchao/">晋朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/nanbeichao/">南北朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/suichao/">隋朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/tangchao/">唐朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/wudaishiguo/">五代十国历史</a>
+				<a href="http://www.todayonhistory.com/lishi/songchao/">宋朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/yuanchao/:;">元朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/mingchao/">明朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/qingchao/">清朝历史</a>
+				<a href="http://www.todayonhistory.com/lishi/jindaishi/">近代历史</a>
+				<a href="http://www.todayonhistory.com/lishi/qwys/">奇闻异事</a>
+				<a href="http://www.todayonhistory.com/lishi/wjzm/">未解之谜</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/lishi/sjls/">世界历史</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/lishi/riben/">日本历史</a>
+				<a href="http://www.todayonhistory.com/lishi/hanguo/">韩国历史</a>
+				<a href="http://www.todayonhistory.com/lishi/chaoxian/">朝鲜历史</a>
+				<a href="http://www.todayonhistory.com/lishi/meiguo/">美国历史</a>
+				<a href="http://www.todayonhistory.com/lishi/yingguo/">英国历史</a>
+				<a href="http://www.todayonhistory.com/lishi/gwls/">其他国家</a>
+				<a href="http://www.todayonhistory.com/lishi/pandian/">历史盘点</a>
+				<a href="http://www.todayonhistory.com/lishi/dsj/">历史大事件</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/guoxue/">国学文化</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/guoxue/sc/">诗词名句</a>
+				<a href="http://www.todayonhistory.com/guoxue/dl/">对联</a>
+				<a href="http://www.todayonhistory.com/guoxue/xhy/">歇后语</a>
+				<a href="http://www.todayonhistory.com/guoxue/my/">谜语</a>
+				<a href="http://www.todayonhistory.com/guoxue/cy/">成语故事</a>
+				<a href="http://www.todayonhistory.com/guoxue/shcs/">神话传说</a>
+				<a href="http://www.todayonhistory.com/guoxue/mswh/">民俗文化</a>
+				<a href="http://www.todayonhistory.com/guoxue/mz/">五十六个民族</a>
+				<a href="http://www.todayonhistory.com/guoxue/sfmh/">书法名画</a>
+			</p>
+			<h3>
+				<a href="http://astro.todayonhistory.com/">十二星座</a>
+			</h3>
+			<p>
+				<a href="http://astro.todayonhistory.com/baiyang/">白羊座</a>
+				<a href="http://astro.todayonhistory.com/jinniu/">金牛座</a>
+				<a href="http://astro.todayonhistory.com/shuangzi/">双子座</a>
+				<a href="http://astro.todayonhistory.com/juxie/">巨蟹座</a>
+				<a href="http://astro.todayonhistory.com/shizi/">狮子座</a>
+				<a href="http://astro.todayonhistory.com/chunv/">处女座</a>
+				<a href="http://astro.todayonhistory.com/tianping/">天枰座</a>
+				<a href="http://astro.todayonhistory.com/tianxie/">天蝎座</a>
+				<a href="http://astro.todayonhistory.com/sheshou/">射手座</a>
+				<a href="http://astro.todayonhistory.com/mojie/">摩羯座</a>
+				<a href="http://astro.todayonhistory.com/shuiping/">水瓶座</a>
+				<a href="http://astro.todayonhistory.com/shuangyu/">双鱼座</a>
+			</p>
+			<h3>
+				<a href="http://www.todayonhistory.com/test/">心里测试</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/test/aiqing/">爱情测试</a>
+				<a href="http://www.todayonhistory.com/test/xingge/">性格测试</a>
+				<a href="http://www.todayonhistory.com/test/zhili/">智力测试</a>
+				<a href="http://www.todayonhistory.com/test/zhiye/:;">职业测试</a>
+			</p>
+			<h3>
+				<a href="http://dream.todayonhistory.com/">周公解梦</a>
+			</h3>
+			<p>
+				<a href="http://dream.todayonhistory.com/ziran/">自然类</a>
+				<a href="http://dream.todayonhistory.com/jianzhu/">建筑类</a>
+				<a href="http://dream.todayonhistory.com/guishen/">鬼神类</a>
+				<a href="http://dream.todayonhistory.com/renwu/:;">人物类</a>
+				<a href="http://dream.todayonhistory.com/dongwu/">动物类</a>
+				<a href="http://dream.todayonhistory.com/zhiwu/:;">植物类</a>
+				<a href="http://dream.todayonhistory.com/qingai/">情爱类</a>
+				<a href="http://dream.todayonhistory.com/shenti/:;">身体类</a>
+				<a href="http://dream.todayonhistory.com/wupin/">物品类</a>
+				<a href="http://dream.todayonhistory.com/shenghuo/">生活类</a>
+				<a href="http://dream.todayonhistory.com/yunfu/">孕妇类</a>
+			</p>
+			<h3>
+				<a href="javascript:;">行业历史今天</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/a/jiaoyu/">教育史上的今天</a>
+				<a href="http://www.todayonhistory.com/a/keji/">科技史上的今天</a>
+				<a href="http://www.todayonhistory.com/a/dssdjt/">党史上的今天</a>
+				<a href="http://www.todayonhistory.com/a/English/">English of today History</a>
+				<a href="http://www.todayonhistory.com/a/che/">车史上的今天</a>
+			</p>
+			<h3>
+				<a href="javascript:;">其他分类</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/baijiaxing/">百家姓</a>
+				<a href="http://www.todayonhistory.com/ershisixiao/">二十四孝</a>
+				<a href="http://www.todayonhistory.com/a/shengrimima/">生日密码</a>
+				<a href="http://www.todayonhistory.com/a/shengrihua/">365天生日花[东方版]</a>
+				<a href="http://www.todayonhistory.com/a/zh5000/">中华上下五千年</a>
+				<a href="http://www.todayonhistory.com/a/mi/">世界历史之谜</a>
+				<a href="http://www.todayonhistory.com/a/sj5000/">世界上下五千年</a>
+			</p>
+			<h3>
+				<a href="javascript:;">历史视频</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/video/xiaosong/">晓松说</a>
+			</p>
+			<h3>
+				<a href="javascript:;">网站介绍</a>
+			</h3>
+			<p>
+				<a href="http://www.todayonhistory.com/a/about/webinfo.html">网站简介</a>
+				<a href="http://www.todayonhistory.com/a/about/couse.html">发展历程</a>
+				<a href="http://www.todayonhistory.com/a/about/readme.html">使用必读</a>
+				<a href="http://www.todayonhistory.com/a/about/gongyi.html">公益活动</a>
+				<a href="http://www.todayonhistory.com/a/about/guanggao.html">赞助广告</a>
+				<a href="http://www.todayonhistory.com/a/about/mianze.html">免责声明</a>
+				<a href="http://www.todayonhistory.com/me.html">联系我们</a>
+				<a href="http://www.todayonhistory.com/link.html">友情链接</a>
+			</p>
+		</div>
+		<div class="adver">
+			
+		</div>
+		<div class="gotop"></div>
+		<footer>
+			<div class="white">
+			Copyright&copy;2004-2015<br>
+			   闽ICP备15013121号-2<br>
+			</div>
+		</footer>
+		<div class="fad">
+			<a href="javascript:;">
+				<img src="http://www.todayonhistory.com/uploadfile/poster/fad.png" />
+			</a>
+			<span onclick="$(this).parent().hide()"></span>
+		</div>
+	</body>
+</html>

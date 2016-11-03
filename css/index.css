@@ -1,0 +1,215 @@
+header {
+  z-index: 100;
+  width: 100%;
+  height: 1.0rem;
+  background: #da4041;
+  position: fixed;
+  top: 0; }
+  header div {
+    width: 100%;
+    height: 1.0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header div span {
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      text-align: center;
+      font-size: 0.5rem;
+      color: #ffffff; }
+      header div span a {
+        color: #fff;
+        text-decoration: none; }
+
+nav {
+  width: 100%;
+  height: 1.6rem;
+  margin-top: 1.0rem; }
+  nav ul {
+    width: 100%;
+    height: 1.6rem; }
+    nav ul li {
+      width: 25%;
+      height: 0.8rem;
+      float: left;
+      line-height: 0.8rem;
+      text-align: center; }
+      nav ul li a {
+        font-size: 0.3rem;
+        color: #353535; }
+
+#figure {
+  width: 100%;
+  height: 2.0rem;
+  background: url(http://www.todayonhistory.com/style/images/banner/ent480.jpg) no-repeat;
+  background-size: cover; }
+
+article {
+  width: 100%;
+  z-index: 10; }
+  article #middle_nav {
+    width: 100%;
+    height: 1.0rem;
+    border-bottom: 1px solid #dbdbd9; }
+    article #middle_nav ul {
+      width: 100%;
+      height: 1.0rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: #F2F2F4; }
+      article #middle_nav ul li {
+        -webkit-box-flex: 1;
+            -ms-flex: auto;
+                flex: auto;
+        height: 1.0rem;
+        line-height: 1.0rem;
+        font-size: 0.4rem;
+        text-align: center; }
+
+section {
+  width: 100%;
+  background: #f2f2f4; }
+  section #title {
+    width: 100%;
+    height: 1.4rem; }
+    section #title .left {
+      float: left;
+      width: 1.2rem;
+      text-align: center; }
+      section #title .left span {
+        display: inline-block;
+        width: 0.72rem;
+        height: 0.72rem;
+        margin-top: 0.5rem;
+        font-size: 0.72rem;
+        color: #da4041; }
+    section #title .right {
+      width: 5.2rem;
+      float: left;
+      line-height: 1.6rem; }
+      section #title .right h2 {
+        font-size: 0.44rem;
+        font-weight: 800; }
+  section ul {
+    height: 100%;
+    width: 100%;
+    padding-bottom: .4rem;
+    background: url(http://www.todayonhistory.com/style/images/tbg.jpg) 0.48rem 0.32rem repeat-y scroll; }
+    section ul li {
+      width: 60%;
+      height: 100%; }
+      section ul li p::before {
+        content: "";
+        display: block;
+        width: .12rem;
+        height: .12rem;
+        background: #da4041;
+        border-radius: .06rem;
+        margin-left: 0.4rem;
+        position: relative;
+        top: -0.1rem; }
+      section ul li p {
+        width: 0.84rem;
+        height: 0.84rem;
+        background: #f2f2f4;
+        position: relative;
+        text-align: center;
+        top: 0.8rem;
+        left: 0.05rem; }
+        section ul li p b {
+          display: block;
+          width: 0.8rem;
+          height: 0.5rem;
+          text-align: center;
+          line-height: 0.5rem;
+          font-size: 0.24rem;
+          color: #df696b; }
+      section ul li p::after {
+        content: "";
+        display: block;
+        width: .12rem;
+        height: .12rem;
+        background: #da4041;
+        border-radius: .06rem;
+        margin-left: 0.4rem;
+        position: relative;
+        top: 0.2rem; }
+      section ul li > div {
+        width: 4.96rem;
+        height: 1.44rem;
+        margin-left: 1.2rem; }
+        section ul li > div img {
+          float: left;
+          width: 1.44rem;
+          height: 1.44rem; }
+        section ul li > div a {
+          float: left;
+          display: inline-block;
+          color: #333;
+          height: 1.44rem;
+          width: 3.24rem;
+          text-align: left;
+          padding-left: .1rem;
+          background: #fff;
+          font-size: .32rem; }
+
+footer {
+  width: 100%;
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background: #f5f5f5; }
+  footer span {
+    display: inline-block;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #001526; }
+    footer span i {
+      display: inline-block;
+      font-size: 0.2rem;
+      background: #f43b3b;
+      color: #fff;
+      font-style: normal;
+      height: 0.21rem;
+      line-height: 0.21rem;
+      vertical-align: text-top; }
+
+#bottom {
+  width: 100%;
+  height: 1rem;
+  background: #DA4041;
+  margin-bottom: 1rem; }
+  #bottom p {
+    font-size: .25rem;
+    color: #fff;
+    text-align: center; }
+
+#back {
+  width: .5rem;
+  height: .6rem;
+  position: fixed;
+  right: .2rem;
+  bottom: 1.5rem;
+  display: none; }
+  #back span {
+    display: inline-block;
+    width: 100%;
+    height: .6rem;
+    background: #DA4041;
+    text-align: center;
+    line-height: .6rem;
+    color: #fff;
+    font-size: .4rem; }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/require.js"></script>
+		<script src="js/config.js" ></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		require(['jquery'],function($){
+		var nowDate=new Date();
+		var month=nowDate.getMonth()+1;
+		var day=nowDate.getDate();
+		$.get("/app/today",{
+			//向服务器发送的数据
+			url : "http://v.juhe.cn/todayOnhistory/queryEvent.php",
+			date : month + "/" + day,
+			key : "963e291d6be89582f50a7b8eae45c15c"
+		},function(result){
+			console.log(result);
+		},"json");
+		})
+	</script>
+</html>

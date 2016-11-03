@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px/24px "微软雅黑";
+  color: #333;
+  background: #fff; }
+
+fieldset, img {
+  border: 0; }
+
+ol, ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+em {
+  font-style: normal; }
+
+input, button, select, textarea {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+p {
+  text-align: justify; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+a:hover {
+  color: #f60;
+  text-decoration: none; }
+
+.clearfix:after {
+  content: "";
+  /*里面可以为空、内容的意思*/
+  visibility: hidden;
+  /*隐藏*/
+  height: 0;
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+.clearfix {
+  zoom: 1;
+  /*这个转为解决IE6的bug的*/ }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot?t=1469420802");
+  /* IE9*/
+  src: url("../font/iconfont.eot?t=1469420802#iefix") format("embedded-opentype"), url("../font/iconfont.woff?t=1469420802") format("woff"), url("../font/iconfont.ttf?t=1469420802") format("truetype"), url("../font/iconfont.svg?t=1469420802#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.5rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.boxsing, header {
+  box-sizing: border-box; }
+
+header {
+  z-index: 100;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  top: 0;
+  margin: 0 auto; }
+  header .mtop {
+    height: 1rem;
+    background: #da4041;
+    line-height: 1rem;
+    z-index: 10;
+    display: block;
+    position: relative; }
+    header .mtop .mlogo {
+      background-image: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      float: left;
+      margin-left: 0.28rem;
+      width: .8rem;
+      background: url("http://www.todayonhistory.com/style/images/prtr.png") right center no-repeat;
+      background-color: #da4041;
+      height: 1rem; }
+      header .mtop .mlogo img {
+        width: .42rem;
+        height: .42rem;
+        padding: 0;
+        margin: 0;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        display: inline-block;
+        max-width: 100%; }
+    header .mtop .mpos {
+      float: left;
+      text-align: left;
+      font-size: .52rem;
+      color: #fff;
+      padding-left: .1rem;
+      width: 61%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 1rem;
+      overflow: hidden; }
+      header .mtop .mpos a {
+        color: #fff;
+        font-weight: 600;
+        font-size: .38rem;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center; }
+      header .mtop .mpos i {
+        display: inline-block;
+        width: .34rem;
+        height: 1rem;
+        background: url("http://www.todayonhistory.com/style/images/prtr.png") no-repeat right center;
+        color: #da4041; }
+    header .mtop .mmenu {
+      width: 20px;
+      height: 20px;
+      background-position: -22px 0;
+      float: right;
+      margin-top: .36rem;
+      margin-right: .24rem;
+      cursor: pointer; }
+    header .mtop .msearch {
+      width: 21px;
+      height: 21px;
+      background-position: 0 0;
+      float: right;
+      margin-top: .34rem;
+      margin-right: .4rem;
+      cursor: pointer; }
+
+title {
+  display: block;
+  width: 94%;
+  height: 1rem;
+  padding: 10% 3% 0 3%;
+  text-align: left;
+  line-height: 0.5rem;
+  font-size: .4rem;
+  font-weight: 600;
+  color: #000; }
+
+#banner img {
+  width: 100%;
+  height: 3.6rem; }
+
+aside {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: .3rem; }
+
+#date img {
+  display: inline-block;
+  width: .4rem;
+  height: .4rem;
+  vertical-align: middle; }
+#date img:nth-of-type(1) {
+  width: .26rem;
+  height: .26rem; }
+
+article {
+  width: 94%;
+  height: 100%;
+  padding: 3%; }
+
+#bottom {
+  width: 100%;
+  height: 1rem;
+  background: #DA4041;
+  margin-top: 1rem; }
+  #bottom p {
+    font-size: .25rem;
+    color: #fff;
+    text-align: center; }
+
+#back {
+  width: .5rem;
+  position: fixed;
+  right: .2rem;
+  bottom: 1.5rem;
+  display: none; }
+  #back a {
+    display: inline-block;
+    width: 100%;
+    padding-top: .3rem;
+    background: #DA4041;
+    text-align: center;
+    color: #fff;
+    font-size: .8rem; }
